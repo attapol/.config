@@ -2,7 +2,7 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 export CLICOLOR=1
 
 export PATH=$PATH:$HOME/workflow
-export PS1="\w $"
+export PS1="\h:\w $"
 
 alias gcfg='/usr/bin/git --git-dir=$HOME/.config/.git --work-tree=$HOME'
 
