@@ -3,6 +3,7 @@ export CLICOLOR=1
 
 export PATH=$PATH:$HOME/workflow
 export PS1="\h:\w $"
+export PYTHONPATH=$PYTHONPATH:.
 
 alias gcfg='/usr/bin/git --git-dir=$HOME/.config/.git --work-tree=$HOME'
 
