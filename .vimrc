@@ -36,6 +36,8 @@
 "    Run py.test test's from within vim
 "
 "
+execute pathogen#infect()
+
 
 
 " ==========================================================
@@ -86,17 +88,6 @@ map <c-k> <c-w>k
 map <c-l> <c-w>l
 map <c-h> <c-w>h
 
-" Open NerdTree
-map <leader>n :NERDTreeToggle<CR>
-
-" Load the Gundo window
-map <leader>g :GundoToggle<CR>
-
-" Jump to the definition of whatever the cursor is on
-"map <leader>j :RopeGotoDefinition<CR>
-
-" Rename whatever the cursor is on (including references to it)
-"map <leader>r :RopeRename<CR>
 
 " ==========================================================
 " Basic Settings
