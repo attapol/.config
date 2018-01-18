@@ -1,43 +1,4 @@
-" ==========================================================
-" Dependencies - Libraries/Applications outside of vim
-" ==========================================================
-" Pep8 - http://pypi.python.org/pypi/pep8
-" Pyflakes
-" Rake & Ruby for command-t
-
-" ==========================================================
-" Plugins included
-" ==========================================================
-" Pathogen
-"     Better Management of VIM plugins
-"
-" GunDo
-"     Visual Undo in vim with diff's to check the differences
-"
-" Pytest
-"     Runs your Python tests in Vim.
-"
-" Snipmate
-"     Configurable snippets to avoid re-typing common comands
-"
-" PyFlakes
-"     Underlines and displays errors with Python on-the-fly
-"
-" Git
-"    Syntax highlighting for git config files
-"
-" Pydoc
-"    Opens up pydoc within vim
-"
-" Surround
-"    Allows you to surround text with open/close tags
-"
-" Py.test
-"    Run py.test test's from within vim
-"
-"
 execute pathogen#infect()
-
 
 
 " ==========================================================
@@ -64,13 +25,6 @@ nmap <leader>sb :call SplitScroll()<CR>
 " Run pep8
 let g:pep8_map='<leader>8'
 
-" run py.test's
-"nmap <silent><Leader>tf <Esc>:Pytest file<CR>
-"nmap <silent><Leader>tc <Esc>:Pytest class<CR>
-"nmap <silent><Leader>tm <Esc>:Pytest method<CR>
-"nmap <silent><Leader>tn <Esc>:Pytest next<CR>
-"nmap <silent><Leader>tp <Esc>:Pytest previous<CR>
-"nmap <silent><Leader>te <Esc>:Pytest error<CR>
 
 " Reload Vimrc
 map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
@@ -256,9 +210,9 @@ set tabstop=4 shiftwidth=4
 
 set guifont=courier:h14
 " colorscheme koehler
-if exists('+colorcolumn')
-	set colorcolumn=100
-endif
+" if exists('+colorcolumn')
+	" set colorcolumn=100
+" endif
 highlight colorcolumn ctermbg=lightgrey guibg=lightgrey
 set cursorline
 
@@ -266,11 +220,6 @@ set autochdir
 set mouse=a
 
 highlight SpellBad cterm=underline gui=undercurl ctermbg=0
-
-map <leader>st :ConqueTermTab sh<CR>
-map <leader>sv :ConqueTermVSplit sh<CR>
-map <leader>ss :ConqueTermSplit sh<CR>
-map <leader>sf :ConqueTerm sh<CR>
 
 map <c-n> :bn<CR>
 map <c-p> :bp<CR>
